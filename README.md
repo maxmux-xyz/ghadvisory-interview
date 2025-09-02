@@ -6,16 +6,20 @@ https://github.com/advisories?query=type%3Areviewed
 Eg. [**GHSA-45qj-4xq3-3c45**](https://github.com/advisories/GHSA-45qj-4xq3-3c45)
 
 - Report desc
-- Source code
-- CWE
+- Source code (URL)
+- CWE id
 
-**2. Then scrape the associated CWE (if exists / otherwise skip)**
+**2. Scrape the associated CWE (if exists / otherwise skip)**
 
 Eg.  https://cwe.mitre.org/data/definitions/77.html
+Using the ID scraped above
 
-**3. find a fix for the vuln in report description and scrape (if exists / otherwise terminate)**
+**3. Find a fix for the vuln in report description and scrape (if exists / otherwise terminate)**
 
 Eg. https://github.com/zcaceres/markdownify-mcp/commit/a31204de058b22a47e1dcc24508993cfe97e5bb3
+Report `GHSA-45qj-4xq3-3c45` above has a git commit link in the report description. Save that link.
+If the fix is not found, terminate.
+Else scrape the link of the fix (filediff).
 
 **4. Assess the fix**
 
