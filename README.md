@@ -9,7 +9,7 @@ Eg. [**GHSA-45qj-4xq3-3c45**](https://github.com/advisories/GHSA-45qj-4xq3-3c45)
 - Source code
 - CWE
 
-**2. Then scrape the associated CWE (if exists / otherwise terminate)**
+**2. Then scrape the associated CWE (if exists / otherwise skip)**
 
 Eg.  https://cwe.mitre.org/data/definitions/77.html
 
